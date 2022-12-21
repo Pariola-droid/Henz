@@ -1,0 +1,311 @@
+@font-face {
+  font-family: Athletics;
+  src: url("Athletics Light.3780bbf3.otf") format("opentype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Athletics;
+  src: url("Athletics Regular.949981fa.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Athletics;
+  src: url("Athletics Medium.28c343ac.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Athletics;
+  src: url("Athletics Bold.0c6a39da.otf") format("opentype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Athletics;
+  src: url("Athletics ExtraBold.4509944f.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Made Avenue Personal Use;
+  src: url("MADEAvenuePERSONALUSE-Regular.1329f13f.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  scroll-behavior: smooth !important;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  color: #0d0d0d;
+  background: none;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+::selection {
+  color: #cbd5e1;
+  background: #111827;
+}
+
+body {
+  font-family: Made Avenue Personal Use !important;
+}
+
+.cb-cursor {
+  z-index: 150;
+  contain: layout style size;
+  pointer-events: none;
+  will-change: transform;
+  transition: opacity .3s, color .4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cb-cursor {
+    display: none;
+  }
+}
+
+.cb-cursor:before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background: currentColor;
+  border-radius: 50%;
+  transition: transform .3s ease-in-out, opacity .1s;
+  display: block;
+  position: absolute;
+  top: -24px;
+  left: -24px;
+  transform: scale(0);
+}
+
+.cb-cursor-text {
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -.01em;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  transition: opacity .4s, transform .3s;
+  display: flex;
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  transform: scale(0)rotate(10deg);
+}
+
+@supports (mix-blend-mode: exclusion) {
+  .cb-cursor.-exclusion, .cb-cursor.-opaque {
+    mix-blend-mode: exclusion;
+  }
+
+  .cb-cursor.-exclusion:before, .cb-cursor.-opaque:before {
+    background: #fff;
+  }
+}
+
+.cb-cursor.-normal, .cb-cursor.-text {
+  mix-blend-mode: normal;
+}
+
+.cb-cursor.-normal:before, .cb-cursor.-text:before {
+  background: currentColor;
+}
+
+.cb-cursor.-inverse {
+  color: #fff;
+}
+
+.cb-cursor.-visible:before {
+  transform: scale(.2);
+}
+
+.cb-cursor.-visible.-active:before {
+  transition-duration: .2s;
+  transform: scale(.23);
+}
+
+.cb-cursor.-pointer:before {
+  transform: scale(.15);
+}
+
+.cb-cursor.-text:before {
+  opacity: .85;
+  transform: scale(1.7);
+}
+
+.cb-cursor.-text .cb-cursor-text {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.cb-cursor.-text.-active:before {
+  transition-duration: .2s;
+  transform: scale(1.6);
+}
+
+.cb-cursor.-opaque:before {
+  transform: scale(1.32);
+}
+
+.cb-cursor.-opaque.-active:before {
+  transform: scale(1.2);
+}
+
+.cb-cursor.-lg:before {
+  transform: scale(2);
+}
+
+.cb-cursor.-hidden:before {
+  transform: scale(0);
+}
+
+@keyframes loader {
+  0% {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.loader-wrap {
+  z-index: 99999998;
+  height: 100vh;
+  width: 100%;
+  cursor: progress;
+  background: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  overflow: hidden;
+}
+
+.loader-wrap svg {
+  width: 100vw;
+  height: 110vh;
+  position: absolute;
+  top: 0;
+}
+
+.loader-wrap .loader-wrap-heading span {
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.loader-wrap .loader-wrap-heading-progress {
+  width: 300px;
+  height: 2px;
+  background: #353535;
+  position: relative;
+}
+
+.loader-wrap .loader-wrap-heading-progress:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  will-change: transform;
+  background: #fff;
+  animation: loader 1s linear infinite alternate;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cIwex, .cJuzzzio, .cWatch, .cVarrie {
+  color: #0d9999;
+}
+
+.cComing {
+  color: #a9a9b7;
+}
+
+main.scrolled .nav-hamburger {
+  transition: transform .4s cubic-bezier(.34, 1.5, .64, 1);
+  transform: translateY(0%)scale(1)rotate(.001deg);
+}
+
+/*# sourceMappingURL=index.e45a3ccc.css.map */
