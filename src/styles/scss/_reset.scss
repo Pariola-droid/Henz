@@ -104,6 +104,12 @@ section {
 body {
   line-height: 1;
   scroll-behavior: smooth !important;
+  position: relative;
+  @extend %MadeAvenuePersonalUse;
+}
+
+main {
+  position: relative;
   @extend %MadeAvenuePersonalUse;
 }
 
@@ -135,7 +141,7 @@ button {
   border: 0;
   padding: 0;
   font-family: inherit;
-  color: #0d0d0d;
+  color: #ffffff;
 }
 
 a {
@@ -164,9 +170,4 @@ ul {
 
 strong {
   font-weight: bolder;
-}
-
-::selection {
-  background: #111827;
-  color: #cbd5e1;
 }

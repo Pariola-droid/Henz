@@ -13,6 +13,16 @@
 //curosr
 @import 'cursor';
 
+// reset::
+body {
+  background-color: $dark-blue;
+}
+
+::selection {
+  background-color: $dark-blue;
+  color: #cbd5e1;
+}
+
 // ==== Loader ========
 
 @-webkit-keyframes loader {

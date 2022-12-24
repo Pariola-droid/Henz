@@ -124,9 +124,7 @@ ScrollTrigger.scrollerProxy(scroll.el, {
 // Locomotive scroll
 
 // Hamburger Nav Open/Close
-const hamburger = document.querySelector('.nav-hamburger');
-const hamburgerInner = document.querySelector('.nav-hamburger__inner');
-const hamburgerBefore = document.querySelector('.nav-hamburger__inner-before');
+const cart = document.querySelector('.nav-cart');
 const sideNav = document.querySelector('.sideNav');
 const skrim = document.querySelector('.sideNav_skrim');
 const sideWrap = document.querySelector('.sideNav_navContent');
@@ -134,11 +132,8 @@ const sideNavContent = document.querySelector('.sideNav_navContent-wrapper');
 const sideNavContentLine = document.querySelectorAll(
   '.sideNav_navContent-top_line'
 );
-const barOne = document.querySelector('.nav-hamburger__bars_bar1');
-const barTwo = document.querySelector('.nav-hamburger__bars_bar2');
-const barThree = document.querySelector('.nav-hamburger__bars_bar3');
 
-hamburger.addEventListener('click', () => {
+cart.addEventListener('click', () => {
   skrim.classList.toggle('toggle');
   sideWrap.classList.toggle('toggle');
   sideNav.classList.toggle('toggle');
@@ -147,13 +142,6 @@ hamburger.addEventListener('click', () => {
   sideNavContentLine.forEach((sideNavContentL) => {
     sideNavContentL.classList.toggle('toggle');
   });
-
-  barOne.classList.toggle('toggle');
-  barTwo.classList.toggle('toggle');
-  barThree.classList.toggle('toggle');
-
-  hamburgerBefore.classList.toggle('toggle');
-  hamburgerInner.classList.toggle('toggle');
 
   if (sideNav.classList.contains('toggle')) {
     scroll.stop();
