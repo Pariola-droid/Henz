@@ -1,0 +1,86 @@
+@import '../../utils/breakpoints';
+@import '../../variables';
+
+.captionTwo {
+  height: fit-content;
+  overflow: hidden;
+  width: 100%;
+  background-color: $creamy-brown;
+  display: grid;
+  place-items: center;
+
+  &_wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-content {
+    width: 50%;
+    padding-left: 5%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    & h1 {
+      font-weight: 400;
+      font-size: 88px;
+      line-height: 111px;
+      color: $dark-blue;
+      margin-bottom: 60px;
+      max-width: 95%;
+    }
+
+    & p {
+      font-family: 'Athletics';
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: $dark-blue;
+      margin-bottom: 60px;
+      max-width: 90%;
+    }
+
+    & button {
+      display: grid;
+      place-items: center;
+      padding: 0 20px;
+      width: max-content;
+      height: 55px;
+      background: $grinch-green;
+      border-radius: 100px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 35px;
+    }
+  }
+
+  &-image {
+    padding: 80px 5% 80px;
+    height: fit-content;
+    width: 50%;
+    display: grid;
+    place-items: center;
+    border-top: 0.8px solid $dark-blue;
+    border-right: 0.8px solid $dark-blue;
+
+    &__img {
+      width: 100%;
+      height: 675px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

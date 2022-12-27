@@ -19,7 +19,7 @@
 
   &-content {
     width: 50%;
-    padding-left: 80px;
+    padding-left: 5%;
     height: fit-content;
     display: flex;
     align-items: flex-start;
@@ -60,7 +60,7 @@
   }
 
   &-image {
-    padding: 80px 60px 80px;
+    padding: 80px 5% 80px;
     height: fit-content;
     width: 50%;
     display: grid;
@@ -70,7 +70,6 @@
 
     &__img {
       width: 100%;
-      max-width: 625px;
       height: 675px;
       display: grid;
       place-items: center;
