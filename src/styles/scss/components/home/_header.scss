@@ -1,0 +1,82 @@
+@import '../../utils/breakpoints';
+@import '../../variables';
+
+.header {
+  height: fit-content;
+  overflow: hidden;
+  width: 100%;
+  background-color: $creamy-brown;
+  padding-top: 110px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &_wrapper {
+    width: 100%;
+    max-width: 90%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 0 75px;
+  }
+
+  &-content {
+    height: fit-content;
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & h1 {
+      font-weight: 400;
+      font-size: 106px;
+      line-height: 130px;
+      color: $dark-blue;
+
+      & span {
+        color: $bloody-red;
+      }
+    }
+
+    & p {
+      font-family: 'Athletics';
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      margin-top: 40px;
+      color: $dark-blue;
+    }
+
+    & button {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      height: 55px;
+      background: $dark-blue;
+      border-radius: 100px;
+      font-family: 'Athletics';
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 35px;
+    }
+  }
+
+  &-image {
+    max-height: 100vh;
+    // height: 820px;
+    max-width: 50vw;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
