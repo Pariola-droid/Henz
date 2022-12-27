@@ -80,4 +80,142 @@
   width: 100%;
 }
 
+.featuredSauce {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background-color: #1e344f;
+  place-items: center;
+  padding: 80px 0;
+  display: grid;
+  overflow: hidden;
+}
+
+.featuredSauce-text {
+  width: max-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 40px;
+}
+
+.featuredSauce-text h1 {
+  color: #f8e9d4;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 113px;
+}
+
+.featuredSauce_border {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 550px;
+  border: .8px solid #f8e9d4;
+  border-left: 0;
+  border-right: 0;
+  place-items: center;
+  display: grid;
+}
+
+.featuredSauce_wrapper {
+  width: 100%;
+  max-width: 90%;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 580px;
+  border: 0;
+  border-left: .8px solid #f8e9d4;
+  border-right: .8px solid #f8e9d4;
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+}
+
+.featuredSauce-sauce {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 30px 25px 20px;
+}
+
+.featuredSauce-sauce:not(:last-of-type) {
+  border-right: 1px solid #f8e9d4;
+}
+
+.featuredSauce-sauce-img {
+  width: 100%;
+  height: 440px;
+  background-color: #f8e9d4;
+  border-radius: 10px;
+  place-items: center;
+  margin-bottom: 22px;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+}
+
+.featuredSauce-sauce-img__abs {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.featuredSauce-sauce-img__abs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featuredSauce-sauce-img__main {
+  width: 334px;
+  height: 334px;
+  position: relative;
+}
+
+.featuredSauce-sauce-img__main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featuredSauce-sauce-text {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.featuredSauce-sauce-text h3, .featuredSauce-sauce-text small {
+  color: #fff;
+  font-family: Athletics;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.featuredSauce-btn {
+  width: max-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  place-items: center;
+  margin-top: 80px;
+  display: grid;
+}
+
+.featuredSauce-btn button {
+  height: 55px;
+  width: max-content;
+  background: #479c4b;
+  border-radius: 100px;
+  place-items: center;
+  padding: 0 20px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  display: grid;
+}
+
 /*# sourceMappingURL=index.36ce1ad1.css.map */
