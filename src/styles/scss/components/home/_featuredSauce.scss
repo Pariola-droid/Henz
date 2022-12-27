@@ -19,7 +19,7 @@
       font-weight: 400;
       font-size: 90px;
       line-height: 113px;
-      color: $fair-brown;
+      color: $creamy-brown;
     }
   }
 
@@ -29,7 +29,7 @@
     max-height: 550px;
     display: grid;
     place-items: center;
-    border: 0.8px solid $fair-brown;
+    border: 0.8px solid $creamy-brown;
     border-left: 0;
     border-right: 0;
   }
@@ -41,7 +41,7 @@
     max-height: 580px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 0.8px solid $fair-brown;
+    border: 0.8px solid $creamy-brown;
     border-top: 0;
     border-bottom: 0;
   }
@@ -52,7 +52,7 @@
     padding: 30px 25px 20px;
 
     &:not(:last-of-type) {
-      border-right: 1px solid $fair-brown;
+      border-right: 1px solid $creamy-brown;
     }
 
     &-img {
@@ -61,7 +61,7 @@
       display: grid;
       place-items: center;
       margin-bottom: 22px;
-      background-color: $fair-brown;
+      background-color: $creamy-brown;
       position: relative;
       border-radius: 10px;
       overflow: hidden;
@@ -136,6 +136,7 @@
       font-weight: 700;
       font-size: 28px;
       line-height: 35px;
+      cursor: pointer;
     }
   }
 }

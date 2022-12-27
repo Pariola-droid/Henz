@@ -89,6 +89,7 @@ table {
 
 button {
   color: #fff;
+  cursor: pointer;
   background: none;
   border: 0;
   padding: 0;

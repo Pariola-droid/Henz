@@ -2,7 +2,7 @@
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
-  background-color: F8E9D4;
+  background-color: #f8e9d4;
   flex-direction: column;
   align-items: center;
   padding-top: 110px;
@@ -54,13 +54,13 @@
 
 .header-content button {
   height: 55px;
+  cursor: pointer;
   background: #1e344f;
   border-radius: 100px;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
   padding: 0 20px;
-  font-family: Athletics;
   font-size: 28px;
   font-weight: 600;
   line-height: 35px;
@@ -208,6 +208,7 @@
 .featuredSauce-btn button {
   height: 55px;
   width: max-content;
+  cursor: pointer;
   background: #479c4b;
   border-radius: 100px;
   place-items: center;
@@ -216,6 +217,184 @@
   font-weight: 700;
   line-height: 35px;
   display: grid;
+}
+
+.captionOne {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background-color: #f8e9d4;
+  place-items: center;
+  display: grid;
+  overflow: hidden;
+}
+
+.captionOne_wrapper {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.captionOne-content {
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 80px;
+  display: flex;
+}
+
+.captionOne-content h1 {
+  color: #1e344f;
+  max-width: 95%;
+  margin-bottom: 60px;
+  font-size: 88px;
+  font-weight: 400;
+  line-height: 111px;
+}
+
+.captionOne-content p {
+  color: #1e344f;
+  max-width: 90%;
+  margin-bottom: 60px;
+  font-family: Athletics;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.captionOne-content button {
+  width: max-content;
+  height: 55px;
+  background: #479c4b;
+  border-radius: 100px;
+  place-items: center;
+  padding: 0 20px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  display: grid;
+}
+
+.captionOne-image {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50%;
+  border-bottom: .8px solid #1e344f;
+  border-left: .8px solid #1e344f;
+  place-items: center;
+  padding: 80px 60px;
+  display: grid;
+}
+
+.captionOne-image__img {
+  width: 100%;
+  max-width: 625px;
+  height: 675px;
+  border-radius: 10px;
+  place-items: center;
+  display: grid;
+  overflow: hidden;
+}
+
+.captionOne-image__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.captionTwo {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background-color: #f8e9d4;
+  place-items: center;
+  display: grid;
+  overflow: hidden;
+}
+
+.captionTwo_wrapper {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.captionTwo-content {
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 80px;
+  display: flex;
+}
+
+.captionTwo-content h1 {
+  color: #1e344f;
+  max-width: 95%;
+  margin-bottom: 60px;
+  font-size: 88px;
+  font-weight: 400;
+  line-height: 111px;
+}
+
+.captionTwo-content p {
+  color: #1e344f;
+  max-width: 90%;
+  margin-bottom: 60px;
+  font-family: Athletics;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.captionTwo-content button {
+  width: max-content;
+  height: 55px;
+  background: #479c4b;
+  border-radius: 100px;
+  place-items: center;
+  padding: 0 20px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  display: grid;
+}
+
+.captionTwo-image {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50%;
+  border-bottom: .8px solid #1e344f;
+  border-left: .8px solid #1e344f;
+  place-items: center;
+  padding: 80px 60px;
+  display: grid;
+}
+
+.captionTwo-image__img {
+  width: 100%;
+  max-width: 625px;
+  height: 675px;
+  border-radius: 10px;
+  place-items: center;
+  display: grid;
+  overflow: hidden;
+}
+
+.captionTwo-image__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=index.36ce1ad1.css.map */
