@@ -1,0 +1,97 @@
+@import '../../utils/breakpoints';
+@import '../../variables';
+
+.testimonial {
+  width: 100%;
+  height: fit-content;
+  padding: 35px 0 50px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+
+  &_wrapper {
+    width: 100%;
+    max-width: 90%;
+    height: fit-content;
+    max-height: 550px;
+    padding: 110px 0 110px;
+  }
+
+  &_slider {
+    width: 100%;
+    height: fit-content;
+  }
+
+  &-testimony {
+    max-width: 445px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    & small {
+      font-family: 'Athletics';
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 31px;
+      text-align: center;
+      color: $creamy-brown;
+      margin-bottom: 28px;
+    }
+
+    & p {
+      font-family: 'Athletics';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: $creamy-brown;
+      margin-top: 36px;
+      max-width: 345px;
+    }
+
+    & h6 {
+      font-family: 'Athletics';
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 38px;
+      color: $creamy-brown;
+    }
+  }
+}
+
+// Splide Slider Lib Customization
+.splide__slide {
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.splide__arrow--prev {
+  left: -1em !important;
+
+  & svg {
+    transform: scaleX(1) !important;
+  }
+}
+
+.splide__arrow--next {
+  right: -1em !important;
+}
+
+.splide__arrow svg {
+  height: unset !important;
+  width: unset !important;
+}
+
+.splide__arrow {
+  height: fit-content !important;
+  opacity: 1 !important;
+  width: fit-content !important;
+  background: transparent !important;
+  border-radius: unset !important;
+}
