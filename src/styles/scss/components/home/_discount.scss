@@ -1,0 +1,67 @@
+@import '../../utils/breakpoints';
+@import '../../variables';
+
+.discount {
+  height: fit-content;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 190px 0 210px;
+
+  &-text {
+    width: max-content;
+    height: fit-content;
+    margin-bottom: 55px;
+
+    & h1 {
+      font-weight: 400;
+      font-size: 90px;
+      line-height: 113px;
+      text-align: center;
+      color: $creamy-brown;
+      max-width: 895px;
+    }
+  }
+
+  &-form {
+    width: 620px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    background-color: $white;
+    border-radius: 85px;
+    overflow: hidden;
+    position: relative;
+
+    & input {
+      width: 100%;
+      height: 100%;
+      padding: 0 20px;
+      border: none;
+      border-radius: 85px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $dark-blue;
+      caret-color: $dark-blue;
+    }
+
+    & button {
+      position: absolute;
+      right: 20px;
+      z-index: 1;
+      padding: 0px 20px;
+      height: 50px;
+      background: $grinch-green;
+      border-radius: 68px;
+      font-family: 'Athletics';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: $white;
+    }
+  }
+}
