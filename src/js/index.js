@@ -16,12 +16,10 @@ const svg = document.getElementById('svg');
 const tl = gsap.timeline();
 const curve = 'M0 502S175 272 500 272s500 230 500 230V0H0Z';
 const flat = 'M0 2S175 1 500 1s500 1 500 1V0H0Z';
-// === declarations
 
 gsap.registerPlugin(ScrollTrigger);
 
 //=== init Cursor
-// Init cursor
 const cursor = new Cursor({
   container: 'body', // container to attach
   speed: 0.7, // default speed
@@ -41,8 +39,7 @@ $('[data-magnetic]').each(function () {
   new Magnetic(this);
 });
 
-/* ================= PRELOADER to Header 
-==================== */
+/* ========= PRELOADER to Header ====== */
 tl.from('.loader-wrap-heading .loader-wrap-heading-progress', {
   delay: 0.5,
   y: 200,
@@ -83,11 +80,6 @@ tl.from(
   },
   '-=1.5'
 );
-
-//
-
-/* ================= PRELOADER to Header 
-==================== */
 
 // Locomotive scroll
 const scroll = new LocomotiveScroll({
@@ -149,4 +141,18 @@ cart.addEventListener('click', () => {
     scroll.start();
   }
 });
-// Hamburger Nav Open/Close
+
+// Splide JS
+import Splide from '@splidejs/splide';
+
+new Splide('.splide', {
+  type: 'loop',
+  perPage: 3,
+  rewind: true,
+  focus: 'center',
+  breakpoints: {
+    600: {
+      perPage: 1,
+    },
+  },
+}).mount();
